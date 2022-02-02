@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+        // TODO: Add code to check answers to questions
+        document.addEventListener('DOMContentLoaded', function(){
+            let correct = document.querySelector('#correct');
+            correct.addEventListener('click', function(){
+                correct.style.backgroundColor = "green";
+                document.querySelector('#p1').innerHTML = "Correct"
+            });
+            let incorrect = document.querySelectorAll('#others');
+            for (let i = 0; i < incorrect.length; i++){
+                incorrect[i].addEventListener('click', function(){
+                        incorrect[i].style.backgroundColor = "red";
+                    document.querySelector('#p1').innerHTML = "InCorrect";
+                });
+            }
+            // Part 2
+            document.querySelector('#confirm').addEventListener('click', function(e){
+                let ans = document.querySelector('#input').value;
+                console.log(ans)
+                if (ans === "cs50x"){
+                    document.querySelector('#p2').innerHTML = "Correct";
+                    document.querySelector('#input').style.backgroundColor = "green";
+                }
+                else{
+                    document.querySelector('#input').style.backgroundColor = "red";
+                    document.querySelector('#p2').innerHTML = "InCorrect";
+                }
+                e.preventDefault();
+            })
+            }
+        );
+        </script>
+
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>Which one of the following is Not Included in CS50 edx courses?</h3>
+                <button type="submit" id="others">CS50x</button>
+                <button type="submit" id="others">CS50w</button>
+                <button type="submit" id="others">CS50ai</button>
+                <button type="submit" id="correct">None</button>
+                <p id=p1></p>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>What are we learning now in cs50</h3>
+                <!-- <form> -->
+                <input type="text" name="input" id="input">
+                    <button type="submit" id="confirm">Confirm</button>
+                <!-- </form> -->
+                <p id="p2"></p>
+            </div>
+        </div>
+
+    </body>
+</html>

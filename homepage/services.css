@@ -1,0 +1,150 @@
+
+
+.box {
+    position: relative;
+    /* top: 197px; */
+    left: 50px;
+    border: 2px solid white;
+    border-radius: 24px;
+    width: 300px;
+    height: 349px;
+    z-index: 1;
+    background: linear-gradient(to right,rgb(246, 131, 150),rgb(167, 167, 185));
+   
+}
+
+
+.innerbox {
+    position: relative;
+    /* top: 4.6px; */
+    left: 6px;
+    width: 283px;
+    height: 280px;
+    border-radius: 23px;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.5);
+    z-index: 5;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.04) 20%) fixed;
+    animation: anima 2s linear infinite;
+    background-color: #8AC4D0; 
+}
+
+.innerbox i {
+    position: relative;
+    left: 256px;
+    /* top: 18px; */
+    font-size: 23px;
+    font-size: 27px;
+    color: white;
+    cursor: pointer;
+}
+
+.innerbox i:hover{
+    color: tomato;
+}
+
+
+.name1 {
+    position: absolute;
+    top: 10.5px;
+    left: 64px;
+    font-size:25px;
+    font-family: 'Righteous', cursive;
+    
+}
+.name11 {
+    position: absolute;
+    top: 32px;
+    left: 64px;
+    font-size:18px;
+    font-family: 'Righteous', cursive;
+    
+}
+.name12 {
+    position: absolute;
+    top: 35px;
+    left: 64px;
+    font-size: 14.2px;
+    font-family: 'Righteous', cursive;
+}
+.name13 {
+    position: absolute;
+    top: 35px;
+    left: 64px;
+    font-size: 14.2px;
+    font-family: 'Righteous', cursive;
+}
+
+.logo1 img{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid tomato;
+    border-radius: 50%;
+}
+
+.mainimg img {
+    position: absolute;
+    top: 65px;
+    left: 5px;
+    width: 273px;
+    height: 211px;
+    border-radius: 23px;
+}
+
+.box3 {
+    position: absolute;
+    top: 72px;
+    left: 0px;
+    width: 99.8%;
+    height: 273px;
+    background-color: #8AC4D0;
+    border-radius: 22px;
+    z-index: 2;
+    box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 50%);
+}
+
+.btns {
+    position: absolute;
+    top: 229px;
+    left: 140px;
+    width: 140px;
+    height: 35px;
+    font-size: 14px;
+    border-radius: 80px;
+    border-style: none;
+    font-weight: 900;
+    border-radius: 60px;
+    background:transparent;
+    color: tomato;
+    font-family: 'Roboto Slab', serif;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.2),
+    -12px -12px 24px 0 rgba(255, 255, 255, 0.4);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.04) 20%) fixed;
+    animation: anima 1.3s linear infinite;
+}
+
+@keyframes anima {
+    0% { background-position: 0vw; }
+    100% { background-position: 100vw; }
+  }
+
+#box12{
+    position: relative;
+    /* top: 197px; */
+    /* left: 580px; */
+    background:linear-gradient(to right, orange ,rgb(22, 67, 85));
+}
+
+
+#box13{
+    position: relative;
+    /* top: 197px; */
+    /* left: 1006px; */
+    background:linear-gradient(to right, cyan ,rgb(22, 67, 85));
+}
+
+
